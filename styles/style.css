@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", serif;
+}
+
+body {
+    background-color: rgb(43, 28, 58);
+    width: 100%;
+    height: 100vh;
+}
+
+.main-tag {
+    padding-top: 50px;
+}
+
+
+
+#login-section {
+    display: flex;
+    gap: 60px;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 90vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#banner {
+    padding: 24px;
+    position: relative;
+    background-color: white;
+    flex: 1;
+    height: 100%;
+    background-image: url('../media/horizon.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#banner .brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-name {
+    color: white;
+    text-shadow: 8px 4px 4px rgba(61, 17, 105, 0.568);
+    font-size: 2rem;
+}
+
+.banner-btn {
+    padding: 5px 14px;
+    background-color: rgba(255, 255, 255, 0.178);
+    border: none;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+#banner-slide {
+    position: absolute;
+    bottom: 40px;
+    color: white;
+    left: 5px;
+    right: 5px;
+    text-align: center;
+
+}
+
+#login-page {
+    flex: 1;
+    width: 100%;
+    color: white;
+    align-self: center;
+    margin-right: 60px;
+}
+
+.name-input {
+    display: flex;
+    gap: 20px;
+}
+
+.name-input input {
+    width: 100%;
+}
+
+.login-input>input {
+    width: 100%;
+}
+
+.create-title {
+    margin-bottom: 24px;
+    font-size: 2.2rem;
+}
+
+.already-account {
+    margin-bottom: 24px;
+}
+
+.already-account>a {
+    color: white;
+}
+
+.name-input {
+    margin-bottom: 24px;
+
+}
+
+
+#first-name,
+#last-name {
+    padding: 18px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+}
+
+
+
+#email-input,
+#password-input {
+    margin-bottom: 24px;
+    padding: 18px;
+    border-radius: 6px;
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    position: relative;
+}
+
+.check-box-area {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.terms-box>a {
+    color: white;
+}
+
+.btn-create-account {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: rgb(138, 82, 228);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.divider span {
+    font-size: 12px;
+}
+
+.divider::after,
+.divider::before {
+    content: '';
+    flex: 1;
+    border-top: 1px solid gray;
+
+}
+
+.divider::after {
+    margin-left: 20px;
+
+}
+
+.divider::before {
+    margin-right: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.google,
+.apple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    gap: 16px;
+    font-weight: 600;
+}
+
+.google img,
+.apple img {
+    width: 30px;
+}
+
+#select-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#select1,
+#select2,
+#select3 {
+    background-color: white;
+    height: 2px;
+    width: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Warnings */
+
+#email-warning {
+    display: none;
+    margin-top: -20px;
+    font-size: 12px;
+    color: rgb(238, 116, 116);
+    position: absolute;
+    font-weight: 400;
+}
